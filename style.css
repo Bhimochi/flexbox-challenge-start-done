@@ -10,3 +10,24 @@ body {
     display:flex;
     flex-direction: column;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#brand {
+    height: 5vw;
+}    
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    font-family: Lato, sans-serif;
+    color: #6a6b6b;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
