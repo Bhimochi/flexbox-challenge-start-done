@@ -5,22 +5,22 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
+
+/* Header */
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
 #brand {
     height: 5vw;
-}    
-
-nav {
-    margin-left: auto;
 }
 
 nav a {
@@ -29,13 +29,14 @@ nav a {
     text-decoration: none;
     margin: 0 0.5rem;
 }
+
+/* Hero */
 #hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: teal;
     padding: 2rem;
-    background: url('images/zebra-hero.jpg') no-repeat center;
+    background: url('images/zebra-hero.jpg') #8980c2 no-repeat center;
     background-size: cover;
 }
 
@@ -44,7 +45,7 @@ nav a {
     border-radius: 50%;
 }
 
-#hero h1{
+#hero h1 {
     font-family: 'Bree Serif', serif;
     color: white;
     font-size: 2.25rem;
@@ -52,10 +53,93 @@ nav a {
     margin: 1rem 0;
 }
 
-#hero a {
+/* Button */
+.button {
+    display: inline-block;
     font-family: Lato, sans-serif;
+    font-size: 1rem;
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    border: 1px solid;
     padding: 0.5rem 1rem;
+}
+
+.btn-purple {
+    color: #8980c2;
+    border-color: #8980c2;
+}
+
+.btn-white {
+    color: white;
+    border-color: white;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    justify-content: space-around;
+}
+
+main h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+/* Main articles */
+main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 0 2rem;
+}
+
+main article img {
+    /* display: none; */
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #8980c2; 
+    margin-bottom: 1rem;
+}
+
+main article h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    color: #8980c2;
+}
+
+main article p {
+    margin: 1rem 0;
+}
+
+/* Social section */
+#social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8980c2;
+    padding: 1rem 0;
+}
+
+#social-links p {
+    font-family: 'Bree Serif', serif;
+    margin: 0 0 1rem;
+    color: white;
+}
+
+#social-links div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;   
 }
